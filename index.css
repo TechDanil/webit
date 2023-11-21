@@ -1,0 +1,142 @@
+body {
+    background: linear-gradient(to bottom right, #f3e771, #e15d84);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    width: 147px;
+    height: 40px;
+    border: none;
+}
+
+.modal {
+    display: none;
+    width: 600px;
+    min-height: 400px;
+}
+
+.modal-header {
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #dadfe5;
+}
+
+.rectangle {
+    width: 116px;
+    height: 20px;
+    background-color: #e15d84;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    min-height: 230px;
+}
+
+.card {
+    position: relative;
+    background-color: #dadfe5;
+    width: 108px;
+    height: 108px;
+}
+
+.card .rectangle {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    left: 0;
+    background-color: #3498db;
+}
+
+.rectangle:nth-child(2) {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.modal-body .card:nth-child(1) .rectangle {
+    width: 41px;
+}
+
+.modal-body .card:nth-child(2) .rectangle {
+    width: 84px;
+}
+
+.modal-body .card:nth-child(3) .rectangle {
+    width: 67px;
+}
+
+.modal-body .card:nth-child(4) .rectangle {
+    width: 34px;
+}
+
+@media(max-width: 630px) {
+    .modal {
+        width: 450px;
+    }
+
+    .card {
+        width: 83px;
+        height: 83px;
+    }
+}
+
+@media(max-width: 430px) {
+    .modal {
+        width: 340px;
+    }
+
+    .card {
+        width: 52px;
+        height: 52px;
+    }
+
+    .rectangle:nth-child(2) {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .modal-body .card:nth-child(1) .rectangle {
+        width: 30%;
+    }
+
+    .modal-body .card:nth-child(2) .rectangle {
+        width: 60%;
+    }
+
+    .modal-body .card:nth-child(3) .rectangle {
+        width: 50%;
+    }
+
+    .modal-body .card:nth-child(4) .rectangle {
+        width: 25%;
+    }
+}
+
+@media(max-width: 360px) {
+    .modal {
+        width: 300px;
+    }
+
+    .card {
+        width: 52px;
+        height: 52px;
+    }
+}
